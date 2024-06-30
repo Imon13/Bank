@@ -10,10 +10,12 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     console.log(password)
     passwordFeild.value = ''
     emailfeild.value = ''
+    // chack valid user or not
     if(email == 'imon@gmail.com' && password == 'imon'){
         console.log('valid users')
+        window.location.href = 'bank.html'
     }
     else{
-        console.log('invalid user')
+        alert('invalid user')
     }
 })
